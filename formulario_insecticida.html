@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Donación de Insecticidas</title>
+  <link rel="stylesheet" href="css/diseño_formulario_donacion.css">
+  <style>
+    /* Estilos adicionales para el botón Volver */
+    .back-button {
+      margin: 20px;
+      background-color: #28a745; /* Verde claro */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+    .back-button:hover {
+      background-color: #218838; /* Verde oscuro */
+      text-decoration: none;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/logouae.ico" alt="Logo">
+      <h4>Donación de Insecticidas</h4>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Donar</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <button type="button" onclick="window.history.back()" class="back-button">Volver</button>
+
+  <section class="form-section">
+    <h2>Formulario de Donación de Insecticidas</h2>
+    <form action="procesar_donacion_insecticidas.php" method="POST">
+      <fieldset>
+        <div class="input-group">
+          <label for="nombre_insecticida">Nombre del insecticida:</label>
+          <input type="text" name="nombre_insecticida" id="nombre_insecticida" required>
+        </div>
+        <div class="input-group">
+          <label for="fecha_caducidad">Fecha de caducidad:</label>
+          <input type="date" name="fecha_caducidad" id="fecha_caducidad" required>
+        </div>
+        <div class="input-group">
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" name="cantidad" id="cantidad" required>
+        </div>
+        <div class="input-group">
+          <label for="estado_insecticida">Estado del insecticida:</label>
+          <select name="estado_insecticida" id="estado_insecticida" required>
+            <option value="nuevo">Nuevo</option>
+            <option value="usado">Usado</option>
+            <option value="caducado">Caducado</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <button type="submit">Donar Insecticidas</button>
+          <button type="button" onclick="window.location.href='consultar_insecticida.php'">Consultar</button>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-nombre">
+      <a href="#">Nombre del Proyecto</a>
+    </div>
+    <div class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+    <div class="contact">
+      <a href="#">Contacto</a>
+    </div>
+  </footer>
+</body>
+</html>

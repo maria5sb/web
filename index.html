@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal - UAE</title>
+  <!--<link rel="stylesheet" href="css/diseño_formulario_donacion.css">-->
+
+ <!-- Favicons -->
+<link href="assets/img/logouae.ico" rel="icon">
+<link href="assets/img/logouae.ico" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet">
+
+  <!--Css-->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+<!-- Otros elementos del head -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center">
+ <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+   <a href="index.html" class="logo d-flex align-items-center">
+     <!-- Uncomment the line below if you also wish to use an image logo -->
+     <!--<h1>Novared<span>.</span></h1>-->
+   </a>
+
+   <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+   <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+   <nav id="navbar" class="navbar">
+     <ul>
+       <li><a href="index.html" class="active">Inicio</a></li>
+       <li><a href="about.html">Sobre nosotros</a></li>
+     
+       <li><a href="contact.html">Contacto</a></li>
+       <!--<li><a href="views/">Login</a></li>-->
+       <li><a href="index.html">Donar</a></li>
+       
+     </ul>
+   </nav><!-- .navbar -->
+
+ </div>
+</header><!-- End Header -->
+
+  <style>
+    /*body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }*/
+
+    /*header {
+      width: 100%;
+      background-color: #348035;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }*/
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      width: 60%;
+      max-width: 1200px;
+    }
+
+    .option {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      width: 45%;
+      max-width: 300px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .option:hover {
+      transform: scale(1.05);
+    }
+
+    .option img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .option h3 {
+      margin: 10px 0;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #3333339d;
+      color: white;
+      text-align: center;
+      padding: 1px;
+      position: fixed;
+      bottom: 0;
+    }
+  </style>
+
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('fondo_uae.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+      <h2>Universidad Agraria del Ecuador</h2>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Universidad Agraria del Ecuador</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+
+  <!--<header>
+    <div class="logo">
+        <img src="imagenes/logouae.ico" alt="Logo">
+        <h4>Universidad Agraria del Ecuador</h4>
+    </div>
+  </header>-->
+  <h1><center>DONACIONES</center></h1>  
+  <div class="container">
+    <div class="option">
+      <a href="formulario_planta.html">
+        <img src="imagenes/planta.png" alt="">
+    </a>
+    <h3>Registro plantas</h3>
+    </div>
+    <div class="option">
+      <a href="formulario_semilla.html">
+        <img src="imagenes/semillas.png" alt="">
+    </a>
+    <h3>Registro semillas</h3>
+    </div>
+    <div class="option">
+      <a href="formulario_fertilizantes.html">
+        <img src="imagenes/quimico.png" alt="">
+    </a>
+    <h3>Registro fertilizantes</h3>
+    </div>
+    <div class="option">
+      <a href="formulario_sustrato.html">
+        <img src="imagenes/pala.png" alt="">
+    </a>
+    <h3>Registro sustrato</h3>
+    </div>
+    <div class="option">
+      <a href="formulario_insecticida.html">
+        <img src="imagenes/insecticida.png" alt="">
+    </a>
+    <h3>Registro insecticida</h3>
+    </div>
+  </div>
+
+  
+</main><!-- End #main -->
+
+
+
+  
+  
+
+  <footer>
+    <p>&copy; 2024 Programa del Misionero UAE "Sembremos un millon de arboles". Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!--whatsaap burbuja chat -->
+  <a href="https://api.whatsapp.com/send?phone=+593960205152&text=¡Hola UAE DONACION, me comunico desde la página web! ¿Puedo hacerle una pregunta?"
+  class="btn-wsp" target="_blanck">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!--<script src="assets/vendor/php-email-form/validate.js"></script>-->
+  <!--<script src="views/js/validacion_cotizacion.js"></script>-->
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
